@@ -1,0 +1,340 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #333;
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background-color: #2F5D4C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+  
+  .logo-container {
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .user-info {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .user-info h2 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .user-info .role {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+  
+  .divider {
+    width: calc(100% - 80px);
+    height: 1px;
+    background-color: white;
+    margin: 20px 0;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .menu-item .icon {
+    width: 24px;
+    margin-right: 20px;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 2; /* Ensures toolbar sits above background */
+  }
+  
+  .nav-arrows {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-icon {
+    width: 18px;
+  }
+  
+  .signout {
+    text-decoration: none;
+    color: #2F5D4C;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .signout img {
+    width: 16px;
+    margin-right: 5px;
+  }
+  
+  /* Background Image */
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Places background behind everything */
+    overflow: hidden;
+  }
+  
+  .background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1; /* Adjust opacity for visibility */
+  }
+  
+  /* Content Container */
+  .content-container {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Ensures content sits above background */
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .table-header h2 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .dropdown-button {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .orders-table th, .orders-table td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  .orders-table th {
+    background-color: #F7F8FA;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .orders-table tbody tr {
+    border-bottom: 1px solid #eee;
+  }
+  
+  .orders-table tbody tr:last-child {
+    border-bottom: none;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .status.active {
+    background-color: #4CAF50;
+  }
+  
+  .status.inactive {
+    background-color: #D9534F;
+  }
+  
+  .table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .table-footer .entry-info {
+    margin-bottom: 5px;
+  }
+  
+  .edit-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .pagination {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .page-btn {
+    border: none;
+    background-color: #F7F8FA;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .page-btn.active {
+    background-color: #2F5D4C;
+    color: white;
+  }
+  /* Tablet view (up to 768px wide) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Narrower sidebar */
+    padding-left: 20px;
+  }
+  .content-container {
+    padding: 15px;
+  }
+  .orders-table th, .orders-table td {
+    font-size: 13px; /* Smaller font size */
+    padding: 10px;
+  }
+}
+
+/* Mobile view (up to 480px wide) */
+@media (max-width: 480px) {
+  /* Hide sidebar on mobile */
+  .sidebar {
+    display: none;
+  }
+
+  /* Make main content full width */
+  .main-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjust toolbar */
+  .toolbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .table-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-button {
+    font-size: 13px;
+  }
+
+  /* Table adjustments */
+  .orders-table {
+    font-size: 12px;
+  }
+  
+  /* Stack pagination buttons */
+  .pagination {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}
+.toggle-sidebar {
+    display: none;
+    background-color: #2F5D4C;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+@media (max-width: 480px) {
+    .toggle-sidebar {
+        display: block; /* Show button on mobile */
+    }
+}
