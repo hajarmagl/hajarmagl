@@ -1,0 +1,246 @@
+/* Tablet - 991px and 991px down */
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 1.35vw;
+    }
+
+    .page_body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .sidebar{
+        position: fixed;
+        left: -100%;
+        z-index: 111;
+        border-radius: 0 2rem 2rem 0;
+        -webkit-transition: 500ms;
+        -o-transition: 500ms;
+        transition: 500ms;
+    }
+
+    .sidebar.show{
+        left: 0;
+    }
+
+    main {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .header {
+        margin-left: -3rem;
+        margin-right: -3rem;
+        padding: 2.5rem 3rem;
+        background: #fff;
+        -webkit-box-shadow: 0 1rem 6rem rgba(226, 236, 249, 0.50);
+                box-shadow: 0 1rem 6rem rgba(226, 236, 249, 0.50);
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    
+    .pagination{
+        display: none;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .home_content_wrapper {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding-top: 3rem;
+        padding-bottom: 8rem;
+    }
+
+    .applications_wrapper{
+        padding-bottom: 5rem;
+    }
+
+    .recent_wrapper{
+        margin-top: 3rem;
+    }
+
+    .blog_item h4 {
+        font-size: 2rem;
+    }
+
+    .blog_item p {
+        font-size: 1.7rem;
+    }
+
+    .count_wrapper{
+        margin-top: 3rem;
+        padding: 3rem;
+    }
+
+    .favorites_wrapper {
+        padding-top: 2rem;
+    }
+
+    .card_wrapper{
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .about_wrapper .box{
+        width: 100%;
+    }
+
+
+    .logout_page{
+        padding-bottom: 35rem;
+    }
+
+    .logout_page::after{
+        display: none;
+    }
+
+    .logout_alert_box{
+        width: 70%;
+    }
+
+    .logout_page .books{
+        width: 43rem;
+    }
+
+}
+
+
+
+
+
+/* Mobile - 600px and 600px down */
+
+@media (max-width: 600px) {
+
+    html{
+        font-size: 2.32vw;
+    }
+
+    main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .header {
+        margin-left: -2rem;
+        margin-right: -2rem;
+        padding: 2.5rem 2rem;
+    }
+
+    .hamburger{
+        width: 2.6rem;
+    }
+
+    .page_title{
+        font-size: 2.2rem;
+        padding-left: 1.6rem;
+    }
+
+    .home_content_wrapper{
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+    }
+
+    .applications_wrapper{
+        padding: 2rem;
+    }
+
+    .applications_wrapper .title{
+        padding-bottom: 3rem;
+    }
+
+    .applications_wrapper .grid {
+        -ms-grid-columns: auto 2rem auto;
+        grid-template-columns: repeat(2, auto);
+        gap: 4rem 2rem;
+    }
+
+    .recent_wrapper{
+        margin-top: 2.4rem;
+    }
+
+    .recent_wrapper .title{
+        font-size: 2.4rem;
+    }
+
+    .blog_item h4{
+        font-size: 1.6rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .blog_item p {
+        font-size: 1.4rem;
+    }
+
+    .favorites_wrapper {
+        padding-bottom: 10rem;
+    }
+
+    .count_wrapper {
+        margin-top: 2.4rem;
+        padding: 1.5rem 2rem;
+    }
+
+    .card_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .about_wrapper .box{
+        padding: 2rem;
+    }
+
+    .about_wrapper .box ul li{
+        font-size: 2rem;
+    }
+
+    .logout_page{
+        padding: 3rem 2rem 26rem 2rem;
+    }
+
+    .logout_page .logo {
+        width: 30rem;
+    }
+
+    .logout_page .title{
+        font-size: 2.4rem;
+        padding: 3rem 0 5rem;
+    }
+
+    .logout_alert_box {
+        width: 75%;
+    }
+
+    .logout_alert_box .checkmark {
+        width: 9rem;
+    }
+
+    .logout_alert_box h4{
+        font-size: 2.4rem;
+        padding-bottom: 5rem;
+    }
+
+    .logout_page .books {
+        width: 29rem;
+    }
+
+}

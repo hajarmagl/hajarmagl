@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWE - Favorites</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- All css file here -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+
+    <div class="page_body" style="background-image: url(img/bg-1.png);">
+
+        <!-- sidebar -->
+        <div class="sidebar sidebar_expand">
+            <!-- sidebar open -->
+            <button class="menu_btn sidebar_toggler">
+                <img src="img/menu.svg" alt="">
+            </button>
+            <!-- sidebar close -->
+            <button class="sidebar_close sidebar_toggler">
+                <img src="img/sidebar-close.svg" alt="">
+            </button>
+            <!-- user -->
+            <div class="user_block">
+                <img class="icon" src="img/user.svg" alt="">
+                <h5 class="name">Norah Alkhalifa</h5>
+                <p class="role">Undergraduate Student</p>
+            </div>
+            <!-- menu -->
+            <div class="menu">
+                <li>
+                    <a href="index.html">
+                        <div class="icon home"><img src="img/home-icon.svg" alt=""></div>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon search"><img src="img/Book-Search-icon.svg" alt=""></div>
+                        <span>Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon book"><img src="img/Book-Library-icon.svg" alt=""></div>
+                        <span>My Library</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="icon resources"><img src="img/Medical-Resources-Book-icon.svg" alt=""></div>
+                        <span>Create My Library</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="favorite.html">
+                        <div class="icon favorites"><img src="img/Book-Close-Bookmark-icon.svg" alt=""></div>
+                        <span>Favorites</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <div class="icon neutral"><img src="img/Single-Neutral-Id-Card-icon.svg" alt=""></div>
+                        <span>About Us</span>
+                    </a>
+                </li>
+            </div>
+        </div>
+
+        <!-- main -->
+        <main>
+
+            <!-- header -->
+            <div class="header">
+                <div class="pagination">
+                    <a href="index.html">
+                        <img src="img/arrow-circle-left.svg" alt="">
+                    </a>
+                    <a href="borrowings.html">
+                        <img src="img/arrow-circle-right.svg" alt="">
+                    </a>
+                </div>
+                <button class="hamburger sidebar_toggler">
+                    <img src="img/menu.svg" alt="">
+                </button>
+                <h3 class="page_title">Favorites</h3>
+                <a href="logout.html" class="signout_btn">
+                    <img src="img/fa_sign-out.svg" alt="">
+                    <span>Sign Out</span>
+                </a>
+            </div>
+
+            <!-- Favorites Content -->
+            <div class="favorites_wrapper">
+                <div class="card_wrapper">
+                    <div class="card">
+                        <img class="card_img" src="img/card-item-1.png" alt="">
+                        <h4 class="card_title">SWE387: Software Project Management </h4>
+                        <div class="card_footer">
+                            <a href="#" class="back_btn">Go to Book</a>
+                            <div class="favorite_btn">
+                                <img src="img/stash_save-ribbon-light.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="img/card-item-2.png" alt="">
+                        <h4 class="card_title">ICS 321: Database Systems</h4>
+                        <div class="card_footer">
+                            <a href="#" class="back_btn">Go to Book</a>
+                            <div class="favorite_btn">
+                                <img src="img/stash_save-ribbon-light.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </main>
+
+    </div>
+
+
+    <!-- All Js File Here -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
